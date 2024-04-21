@@ -1,0 +1,437 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Judson;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.slides{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    color: #fff;
+    scroll-snap-align: start;
+    background: linear-gradient(454deg, #4f4080, #9553ff);
+    
+}
+
+.slides h1{
+    font-family: Judson;
+    font-size: 6em;
+    font-weight: 600;
+    max-width: 100%;
+    text-align: center;
+}
+
+.slides h2{
+    font-family: Judson;
+    font-size: 2em;
+    font-weight: 600;
+    max-width: 100%;
+    text-align: center;
+}
+
+/*TITLE PAGE SLIDE*/
+
+#TitlePage{
+    background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(0, 0, 0)),
+    url('images/TitleBackground.jpg');
+    background-size: cover;
+    position: relative;
+}
+
+#TitlePage h3{
+    font-family: Judson;
+    font-size: 1em;
+    font-weight: 600;
+    max-width: 100%;
+    color: grey;
+    text-align: center;
+}
+
+#title{
+    font-family: Judson;
+    font-size: 8em;
+    font-weight: 150;
+    color: #EEEEEE;
+    max-width: 100%;
+    position: absolute;
+    top: 40%;
+
+}
+
+#slogan{
+    font-family: Judson;
+    font-size: 1.25em;
+    font-weight: 150;
+    color: #EEEEEE;
+    max-width: 100%;
+    position: absolute;
+    top: 55%;
+}
+
+#learnMore{
+    font-family: Judson;
+    font-size: 1em;
+    font-weight: 150;
+    color: #EEEEEE;
+    max-width: 100%;
+    position: absolute;
+    top: 80%;
+}
+
+#DownArrowIcon{
+    width: 1.8%;
+    position: absolute;
+    top: 81.5%;
+    filter: invert(100%) sepia(6%) saturate(52%) hue-rotate(180deg) brightness(111%) contrast(87%);
+}
+
+#contact{
+    font-family: Judson;
+    font-size: 1em;
+    font-weight: 500;
+    max-width: 100%;
+    color: grey;
+    position: absolute;
+    top: 4%;
+    right: 8%;
+}
+
+#follow{
+    font-family: Judson;
+    font-size: 1em;
+    font-weight: 500;
+    max-width: 100%;
+    color: grey;
+    position: absolute;
+    top: 4%;
+    right: 29%;
+}
+
+#PhoneIcon{
+    width: 1.3%;
+    position: absolute;
+    top: 3.5%;
+    right: 5%;
+    filter: invert(37%) sepia(3%) saturate(0%) hue-rotate(137deg) brightness(99%) contrast(84%);
+}
+
+#FacebookIcon{
+    width: 1.3%;
+    position: absolute;
+    top: 3.5%;
+    right: 26%;
+    filter: invert(37%) sepia(3%) saturate(0%) hue-rotate(137deg) brightness(99%) contrast(84%);
+}
+
+#InstagramIcon{
+    width: 1.3%;
+    position: absolute;
+    top: 3.5%;
+    right: 20%;
+    filter: invert(37%) sepia(3%) saturate(0%) hue-rotate(137deg) brightness(99%) contrast(84%);
+}
+
+#TwitterIcon{
+    width: 1.3%;
+    position: absolute;
+    top: 3.5%;
+    right: 23%;
+    filter: invert(37%) sepia(3%) saturate(0%) hue-rotate(137deg) brightness(99%) contrast(84%);
+}
+
+#LogoIcon{
+    width: 4%;
+    position: absolute;
+    top: 3.5%;
+    left: 2%;
+    filter: invert(37%) sepia(3%) saturate(0%) hue-rotate(137deg) brightness(99%) contrast(84%);
+}
+
+/*OUR VISION SLIDE*/
+
+#OurVision{
+    background: #000000;
+    position: relative;
+}
+
+#WhoWeAre{
+    font-family: Judson;
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #EEEEEE;
+    max-width: 100%;
+    position: absolute;
+    top: 20%;
+}
+
+#Slide2P1{
+    font-family: Judson;
+    font-size: 1em;
+    font-weight: 150;
+    color: #BBBBBB;
+    max-width: 40%;
+    position: absolute;
+    top: 28%;
+}
+
+#KeyFeatures{
+    font-family: Judson;
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #EEEEEE;
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+}
+
+#WhatWeDoBest{
+    font-family: Judson;
+    font-size: 1em;
+    font-weight: 150;
+    color: #BBBBBB;
+    max-width: 100%;
+    position: absolute;
+    top: 56%;
+}
+
+#BorderIcon1{
+    width: 3%;
+    position: absolute;
+    top: 65%;
+    left: 18%;
+    filter: invert(83%) sepia(42%) saturate(3584%) hue-rotate(351deg) brightness(102%) contrast(101%);
+}
+
+#StrongIcon{
+    width: 2%;
+    position: absolute;
+    top: 66%;
+    left: 18.5%;
+    filter: invert(83%) sepia(42%) saturate(3584%) hue-rotate(351deg) brightness(102%) contrast(101%);
+}
+
+#BorderIcon2{
+    width: 3%;
+    position: absolute;
+    top: 65%;
+    left: 35.5%;
+    filter: invert(83%) sepia(42%) saturate(3584%) hue-rotate(351deg) brightness(102%) contrast(101%);
+}
+
+#SmartIcon{
+    width: 2%;
+    position: absolute;
+    top: 66%;
+    left: 36%;
+    filter: invert(83%) sepia(42%) saturate(3584%) hue-rotate(351deg) brightness(102%) contrast(101%);
+}
+
+#BorderIcon3{
+    width: 3%;
+    position: absolute;
+    top: 65%;
+    left: 54.5%;
+    filter: invert(83%) sepia(42%) saturate(3584%) hue-rotate(351deg) brightness(102%) contrast(101%);
+}
+
+#SimpleIcon{
+    width: 2%;
+    position: absolute;
+    top: 66%;
+    left: 55%;
+    filter: invert(83%) sepia(42%) saturate(3584%) hue-rotate(351deg) brightness(102%) contrast(101%);
+}
+
+#BorderIcon4{
+    width: 3%;
+    position: absolute;
+    top: 65%;
+    left: 71.5%;
+    filter: invert(83%) sepia(42%) saturate(3584%) hue-rotate(351deg) brightness(102%) contrast(101%);
+}
+
+#CompactIcon{
+    width: 2%;
+    position: absolute;
+    top: 66%;
+    left: 72%;
+    filter: invert(83%) sepia(42%) saturate(3584%) hue-rotate(351deg) brightness(102%) contrast(101%);
+}
+
+#Durable{
+    font-family: Judson;
+    font-size: 2.25em;
+    font-weight: 600;
+    color: #EEEEEE;
+    max-width: 100%;
+    position: absolute;
+    top: 65.75%;
+    left: 21.5%;
+}
+
+#DurableP1{
+    font-family: Judson;
+    font-size: 1.5em;
+    font-weight: 150;
+    color: #BBBBBB;
+    max-width: 10%;
+    text-align: left;
+    position: absolute;
+    top: 72%;
+    left: 18.5%;
+}
+
+#OVLine1{
+    background-color: #BBBBBB;
+    width: 10%;
+    height: 2px;
+    line-height: 80%;
+    position: absolute;
+    top: 79%;
+    left: 18.5%;
+}
+
+#Intelligent{
+    font-family: Judson;
+    font-size: 2.25em;
+    font-weight: 600;
+    color: #EEEEEE;
+    max-width: 100%;
+    position: absolute;
+    top: 65.75%;
+    left: 39%;
+}
+
+#IntelligentP1{
+    font-family: Judson;
+    font-size: 1.5em;
+    font-weight: 150;
+    color: #BBBBBB;
+    max-width: 10%;
+    text-align: left;
+    position: absolute;
+    top: 72%;
+    left: 36%;
+}
+
+#OVLine2{
+    background-color: #BBBBBB;
+    width: 10%;
+    height: 2px;
+    line-height: 80%;
+    position: absolute;
+    top: 79%;
+    left: 36%;
+}
+
+#Simple{
+    font-family: Judson;
+    font-size: 2.25em;
+    font-weight: 600;
+    color: #EEEEEE;
+    max-width: 100%;
+    position: absolute;
+    top: 65.75%;
+    left: 58%;
+}
+
+#SimpleP1{
+    font-family: Judson;
+    font-size: 1.5em;
+    font-weight: 150;
+    color: #BBBBBB;
+    max-width: 10%;
+    text-align: left;
+    position: absolute;
+    top: 72%;
+    left: 55%;
+}
+
+#OVLine3{
+    background-color: #BBBBBB;
+    width: 10%;
+    height: 2px;
+    line-height: 80%;
+    position: absolute;
+    top: 79%;
+    left: 55%;
+}
+
+#Compact{
+    font-family: Judson;
+    font-size: 2.25em;
+    font-weight: 600;
+    color: #EEEEEE;
+    max-width: 100%;
+    position: absolute;
+    top: 65.75%;
+    left: 75%;
+}
+
+#CompactP1{
+    font-family: Judson;
+    font-size: 1.5em;
+    font-weight: 150;
+    color: #BBBBBB;
+    max-width: 10%;
+    text-align: left;
+    position: absolute;
+    top: 72%;
+    left: 72%;
+}
+
+#OVLine4{
+    background-color: #BBBBBB;
+    width: 10%;
+    height: 2px;
+    line-height: 80%;
+    position: absolute;
+    top: 79%;
+    left: 72%;
+}
+
+/*WHOS IT FOR SLIDE*/
+
+#WhoItsFor{
+    background: #000000;
+    position: relative;
+}
+
+/*THE MAGIC SLIDE*/
+
+#TheMagic{
+    background: #000000;
+    position: relative;
+}
+
+/*MEET THE TEAM SLIDE*/
+
+#MeetTheTeam{
+    background: #000000;
+    position: relative;
+}
+
+/*SIGN UP HERE SLIDE*/
+
+#SignUpHere{
+    background: #000000;
+    position: relative;
+}
+
+
+
+
