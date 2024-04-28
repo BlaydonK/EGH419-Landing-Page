@@ -1,0 +1,935 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Judson;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.slides{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    color: #fff;
+    scroll-snap-align: start; 
+}
+
+.slides h1{
+    font-family: Judson;
+    font-size: 6em;
+    font-weight: 600;
+    max-width: 100%;
+    text-align: center;
+}
+
+.slides h2{
+    font-family: Judson;
+    font-size: 2em;
+    font-weight: 600;
+    max-width: 100%;
+    text-align: center;
+}
+
+/*TITLE PAGE SLIDE*/
+
+#TitlePage{
+    background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(0, 0, 0)),
+    url('images/TitleBackground.jpg');
+    background-size: cover;
+    position: relative;
+}
+
+#TitlePage h3{
+    font-family: Judson;
+    font-weight: 600;
+    max-width: 100%;
+    color: grey;
+    text-align: center;
+}
+
+#title{
+    font-family: Judson;
+    font-size: 14vh;
+    font-weight: 150;
+    color: #EEEEEE;
+    max-width: 100%;
+    position: absolute;
+    top: 40%;
+
+}
+
+#slogan{
+    font-family: Judson;
+    font-size: 2.25vh;
+    font-weight: 150;
+    color: #EEEEEE;
+    max-width: 100%;
+    position: absolute;
+    top: 55%;
+}
+
+#learnMore{
+    font-family: Judson;
+    font-size: 1.75vh;
+    font-weight: 150;
+    color: #EEEEEE;
+    max-width: 100%;
+    position: absolute;
+    top: 80%;
+}
+
+#DownArrowIcon{
+    width: 1.8%;
+    position: absolute;
+    top: 81.5%;
+    filter: invert(100%) sepia(6%) saturate(52%) hue-rotate(180deg) brightness(111%) contrast(87%);
+}
+
+#contact{
+    font-family: Judson;
+    font-size: 1.75vh;
+    font-weight: 500;
+    max-width: 100%;
+    color: grey;
+    position: absolute;
+    top: 4%;
+    right: 8%;
+}
+
+#follow{
+    font-family: Judson;
+    font-size: 1.75vh;
+    font-weight: 500;
+    max-width: 100%;
+    color: grey;
+    position: absolute;
+    top: 4%;
+    right: 29%;
+}
+
+#PhoneIcon{
+    height: 2.75%;
+    min-height: 16px;
+    position: absolute;
+    top: 3.5%;
+    right: 5%;
+    filter: invert(37%) sepia(3%) saturate(0%) hue-rotate(137deg) brightness(99%) contrast(84%);
+}
+
+#FacebookIcon{
+    height: 2.75%;
+    min-height: 16px;
+    position: absolute;
+    top: 3.5%;
+    right: 26%;
+    filter: invert(37%) sepia(3%) saturate(0%) hue-rotate(137deg) brightness(99%) contrast(84%);
+}
+
+#InstagramIcon{
+    height: 2.75%;
+    min-height: 16px;
+    position: absolute;
+    top: 3.5%;
+    right: 20%;
+    filter: invert(37%) sepia(3%) saturate(0%) hue-rotate(137deg) brightness(99%) contrast(84%);
+}
+
+#TwitterIcon{
+    height: 2.75%;
+    min-height: 16px;
+    position: absolute;
+    top: 3.5%;
+    right: 23%;
+    filter: invert(37%) sepia(3%) saturate(0%) hue-rotate(137deg) brightness(99%) contrast(84%);
+}
+
+#LogoIcon{
+    height: 12%;
+    min-height: 32px;
+    position: absolute;
+    top: 1.5%;
+    left: 1%;
+    filter: invert(37%) sepia(3%) saturate(0%) hue-rotate(137deg) brightness(99%) contrast(84%);
+}
+
+/*OUR VISION SLIDE*/
+
+#OurVision{
+    background: #000000;
+    position: relative;
+}
+
+#WhoWeAre{
+    font-family: Judson;
+    font-size: 4.25vh;
+    font-weight: 600;
+    color: #EEEEEE;
+    max-width: 100%;
+    position: absolute;
+    top: 20%;
+}
+
+#Slide2P1{
+    font-family: Judson;
+    font-size: 1.75vh;
+    font-weight: 150;
+    color: #BBBBBB;
+    max-width: 40%;
+    position: absolute;
+    top: 28%;
+}
+
+#KeyFeatures{
+    font-family: Judson;
+    font-size: 4.25vh;
+    font-weight: 600;
+    color: #EEEEEE;
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+}
+
+#WhatWeDoBest{
+    font-family: Judson;
+    font-size: 1.75vh;
+    font-weight: 150;
+    color: #BBBBBB;
+    max-width: 100%;
+    position: absolute;
+    top: 56%;
+}
+
+#BorderIcon1{
+    width: 3%;
+    position: absolute;
+    top: 65%;
+    left: 18%;
+    filter: invert(83%) sepia(42%) saturate(3584%) hue-rotate(351deg) brightness(102%) contrast(101%);
+}
+
+#StrongIcon{
+    width: 2%;
+    position: absolute;
+    top: 66%;
+    left: 18.5%;
+    filter: invert(83%) sepia(42%) saturate(3584%) hue-rotate(351deg) brightness(102%) contrast(101%);
+}
+
+#BorderIcon2{
+    width: 3%;
+    position: absolute;
+    top: 65%;
+    left: 35.5%;
+    filter: invert(83%) sepia(42%) saturate(3584%) hue-rotate(351deg) brightness(102%) contrast(101%);
+}
+
+#SmartIcon{
+    width: 2%;
+    position: absolute;
+    top: 66%;
+    left: 36%;
+    filter: invert(83%) sepia(42%) saturate(3584%) hue-rotate(351deg) brightness(102%) contrast(101%);
+}
+
+#BorderIcon3{
+    width: 3%;
+    position: absolute;
+    top: 65%;
+    left: 54.5%;
+    filter: invert(83%) sepia(42%) saturate(3584%) hue-rotate(351deg) brightness(102%) contrast(101%);
+}
+
+#SimpleIcon{
+    width: 2%;
+    position: absolute;
+    top: 66%;
+    left: 55%;
+    filter: invert(83%) sepia(42%) saturate(3584%) hue-rotate(351deg) brightness(102%) contrast(101%);
+}
+
+#BorderIcon4{
+    width: 3%;
+    position: absolute;
+    top: 65%;
+    left: 71.5%;
+    filter: invert(83%) sepia(42%) saturate(3584%) hue-rotate(351deg) brightness(102%) contrast(101%);
+}
+
+#CompactIcon{
+    width: 2%;
+    position: absolute;
+    top: 66%;
+    left: 72%;
+    filter: invert(83%) sepia(42%) saturate(3584%) hue-rotate(351deg) brightness(102%) contrast(101%);
+}
+
+#Durable{
+    font-family: Judson;
+    font-size: 4vh;
+    font-weight: 600;
+    color: #EEEEEE;
+    max-width: 100%;
+    position: absolute;
+    top: 65.75%;
+    left: 21.5%;
+}
+
+#DurableP1{
+    font-family: Judson;
+    font-size: clamp(12px,2.5vh,32px);
+    font-weight: 150;
+    color: #BBBBBB;
+    max-width: 10%;
+    text-align: left;
+    position: absolute;
+    top: 72%;
+    left: 18.5%;
+}
+
+#OVLine1{
+    background-color: #BBBBBB;
+    width: 10%;
+    height: 2px;
+    line-height: 86%;
+    position: absolute;
+    top: 85%;
+    left: 18.5%;
+}
+
+#Intelligent{
+    font-family: Judson;
+    font-size: 4vh;
+    font-weight: 600;
+    color: #EEEEEE;
+    max-width: 100%;
+    position: absolute;
+    top: 65.75%;
+    left: 39%;
+}
+
+#IntelligentP1{
+    font-family: Judson;
+    font-size: clamp(12px,2.5vh,32px);
+    font-weight: 150;
+    color: #BBBBBB;
+    max-width: 10%;
+    text-align: left;
+    position: absolute;
+    top: 72%;
+    left: 36%;
+}
+
+#OVLine2{
+    background-color: #BBBBBB;
+    width: 10%;
+    height: 2px;
+    line-height: 86%;
+    position: absolute;
+    top: 85%;
+    left: 36%;
+}
+
+#Simple{
+    font-family: Judson;
+    font-size: 4vh;
+    font-weight: 600;
+    color: #EEEEEE;
+    max-width: 100%;
+    position: absolute;
+    top: 65.75%;
+    left: 58%;
+}
+
+#SimpleP1{
+    font-family: Judson;
+    font-size: clamp(12px,2.5vh,32px);
+    font-weight: 150;
+    color: #BBBBBB;
+    max-width: 10%;
+    text-align: left;
+    position: absolute;
+    top: 72%;
+    left: 55%;
+}
+
+#OVLine3{
+    background-color: #BBBBBB;
+    width: 10%;
+    height: 2px;
+    line-height: 86%;
+    position: absolute;
+    top: 85%;
+    left: 55%;
+}
+
+#Compact{
+    font-family: Judson;
+    font-size: 4vh;
+    font-weight: 600;
+    color: #EEEEEE;
+    max-width: 100%;
+    position: absolute;
+    top: 65.75%;
+    left: 75%;
+}
+
+#CompactP1{
+    font-family: Judson;
+    font-size: clamp(12px,2.5vh,32px);
+    font-weight: 150;
+    color: #BBBBBB;
+    max-width: 10%;
+    text-align: left;
+    position: absolute;
+    top: 72%;
+    left: 72%;
+}
+
+#OVLine4{
+    background-color: #BBBBBB;
+    width: 10%;
+    height: 2px;
+    line-height: 86%;
+    position: absolute;
+    top: 85%;
+    left: 72%;
+}
+
+/*WHOS IT FOR SLIDE*/
+
+#WhoItsFor{
+    background: #000000;
+    position: relative;
+}
+
+#SoWhoItsFor{
+    font-family: Judson;
+    font-size: 4.25vh;
+    font-weight: 600;
+    color: #EEEEEE;
+    max-width: 100%;
+    position: absolute;
+    top: 17.5%;
+}
+
+#ThreeImages{
+    width: 55%;
+    position: absolute;
+    top: 26%;
+}
+
+#FunctionVenues{
+    font-family: Judson;
+    font-size: 3vh;
+    font-weight: 800;
+    color: #FFBB0B;
+    max-width: 100%;
+    position: absolute;
+    top: 30%;
+    left: 24%;
+}
+
+#FunctionVenuesP1{
+    font-family: Judson;
+    font-size: 1.75vh;
+    font-weight: 150;
+    color: #BBBBBB;
+    max-width: 15%;
+    text-align: left;
+    position: absolute;
+    top: 35%;
+    left: 24%;
+}
+
+#FunctionVenuesMI{
+    font-family: Judson;
+    font-size: 1.75vh;
+    font-weight: 150;
+    color: #FFBB0B;
+    max-width: 100%;
+    position: absolute;
+    top: 76%;
+    left: 24%;
+}
+
+#HomeRemovailists{
+    font-family: Judson;
+    font-size: 3vh;
+    font-weight: 800;
+    color: #FFBB0B;
+    max-width: 100%;
+    position: absolute;
+    top: 30%;
+    left: 42.5%;
+}
+
+#HomeRemovailistsP1{
+    font-family: Judson;
+    font-size: 1.75vh;
+    font-weight: 150;
+    color: #BBBBBB;
+    max-width: 15%;
+    text-align: left;
+    position: absolute;
+    top: 35%;
+    left: 42.5%;
+}
+
+#HomeRemovailistsMI{
+    font-family: Judson;
+    font-size: 1.75vh;
+    font-weight: 150;
+    color: #FFBB0B;
+    max-width: 100%;
+    position: absolute;
+    top: 76%;
+    left: 42.5%;
+}
+
+#WarehouseOperators{
+    font-family: Judson;
+    font-size: 3vh;
+    font-weight: 800;
+    color: #FFBB0B;
+    max-width: 100%;
+    position: absolute;
+    top: 30%;
+    left: 60.75%;
+}
+
+#WarehouseOperatorsP1{
+    font-family: Judson;
+    font-size: 1.75vh;
+    font-weight: 150;
+    color: #BBBBBB;
+    max-width: 15%;
+    text-align: left;
+    position: absolute;
+    top: 35%;
+    left: 60.75%;
+}
+
+#WarehouseOperatorsMI{
+    font-family: Judson;
+    font-size: 1.75vh;
+    font-weight: 150;
+    color: #FFBB0B;
+    max-width: 100%;
+    position: absolute;
+    top: 76%;
+    left: 60.75%;
+}
+
+/*THE MAGIC SLIDE*/
+
+#TheMagic{
+    background: #000000;
+    position: relative;
+}
+
+#TheMagicTitle{
+    font-family: Judson;
+    font-size: 4.25vh;
+    font-weight: 600;
+    color: #EEEEEE;
+    max-width: 100%;
+    position: absolute;
+    top: 17.5%;
+    left: 15%;
+}
+
+#TheMagicP1{
+    font-family: Judson;
+    font-size: 2vh;
+    font-weight: 150;
+    color: #BBBBBB;
+    max-width: 25%;
+    text-align: left;
+    position: absolute;
+    top: 25%;
+    left: 15%;
+}
+
+#TheMagicP2{
+    font-family: Judson;
+    font-size: 2vh;
+    font-weight: 150;
+    color: #BBBBBB;
+    max-width: 25%;
+    text-align: left;
+    position: absolute;
+    top: 38%;
+    left: 15%;
+}
+
+#TheMagicP3{
+    font-family: Judson;
+    font-size: 2vh;
+    font-weight: 150;
+    color: #BBBBBB;
+    max-width: 25%;
+    text-align: left;
+    position: absolute;
+    top: 51%;
+    left: 15%;
+}
+
+#TheMagicP4{
+    font-family: Judson;
+    font-size: 2vh;
+    font-weight: 150;
+    color: #BBBBBB;
+    max-width: 25%;
+    text-align: left;
+    position: absolute;
+    top: 64%;
+    left: 15%;
+}
+
+#PlaceHolderImage1{
+    width: 18%;
+    position: absolute;
+    top: 17.5%;
+    left: 60%;
+}
+
+#PlaceHolderImage2{
+    width: 15%;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+}
+
+/*MEET THE TEAM SLIDE*/
+
+#MeetTheTeam{
+    background: #000000;
+    position: relative;
+}
+
+.ColourBreaker{
+    background-color: #FFBB0B;
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    left: 0%;
+}
+
+#MeetTheTeamTitle{
+    font-family: Judson;
+    font-size: 4.25vh;
+    font-weight: 600;
+    color: #EEEEEE;
+    max-width: 100%;
+    position: absolute;
+    top: 16%;
+    left: 15%;
+}
+
+#ProfileFull1{
+    width: 9%;
+    position: absolute;
+    top: 25%;
+    left: 17%;
+}
+
+#ProfileHollow1{
+    width: 10%;
+    position: absolute;
+    top: 25%;
+    left: 36%;
+}
+
+#ProfileFull2{
+    width: 9%;
+    position: absolute;
+    top: 25%;
+    left: 54%;
+}
+
+#ProfileHollow2{
+    width: 10%;
+    position: absolute;
+    top: 25%;
+    left: 73%;
+}
+
+#Square1{
+    background-color: #000000;
+    width: 12%;
+    height: 30%;
+    position: absolute;
+    top: 45%;
+    left: 15.7%;
+}
+
+#Square2{
+    background-color: #000000;
+    width: 12%;
+    height: 30%;
+    position: absolute;
+    top: 45%;
+    left: 34.9%;
+}
+
+#Square3{
+    background-color: #000000;
+    width: 12%;
+    height: 30%;
+    position: absolute;
+    top: 45%;
+    left: 52.7%;
+}
+
+#Square4{
+    background-color: #000000;
+    width: 12%;
+    height: 30%;
+    position: absolute;
+    top: 45%;
+    left: 71.9%;
+}
+
+#Name1{
+    font-family: Judson;
+    font-size: 3vh;
+    font-weight: 600;
+    color: #EEEEEE;
+    max-width: 100%;
+    position: absolute;
+    top: 45.5%;
+    left: 16.9%;
+}
+
+#Role1{
+    font-family: Judson;
+    font-size: 1.8vh;
+    font-weight: 150;
+    color: #BBBBBB;
+    max-width: 10%;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 16.9%;
+}
+
+#Name2{
+    font-family: Judson;
+    font-size: 3vh;
+    font-weight: 600;
+    color: #EEEEEE;
+    max-width: 100%;
+    position: absolute;
+    top: 45.5%;
+    left: 35.95%;
+}
+
+#Role2{
+    font-family: Judson;
+    font-size: 1.8vh;
+    font-weight: 150;
+    color: #BBBBBB;
+    max-width: 10%;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 35.95%;
+}
+
+#Name3{
+    font-family: Judson;
+    font-size: 3vh;
+    font-weight: 600;
+    color: #EEEEEE;
+    max-width: 100%;
+    position: absolute;
+    top: 45.5%;
+    left: 53.35%;
+}
+
+#Role3{
+    font-family: Judson;
+    font-size: 1.8vh;
+    font-weight: 150;
+    color: #BBBBBB;
+    max-width: 10%;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 53.35%;
+}
+
+#Name4{
+    font-family: Judson;
+    font-size: 3vh;
+    font-weight: 600;
+    color: #EEEEEE;
+    max-width: 100%;
+    position: absolute;
+    top: 45.5%;
+    left: 73.4%;
+}
+
+#Role4{
+    font-family: Judson;
+    font-size: 1.8vh;
+    font-weight: 150;
+    color: #BBBBBB;
+    max-width: 10%;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 73.4%;
+}
+
+/*SIGN UP HERE SLIDE*/
+
+#SignUpHere{
+    background: #000000;
+    position: relative;
+}
+
+#Optimize{
+    font-family: Judson;
+    font-size: 4.25vh;
+    font-weight: 600;
+    color: #EEEEEE;
+    max-width: 100%;
+    position: absolute;
+    top: 17.5%;
+}
+
+#SearchBar{
+    width: 30%;
+    max-width: 100%;
+    position: absolute;
+    top: 25%;
+    padding: 0.9%;
+    border-radius: 35px;
+    background: White;
+    color: #888888;
+    font-size: 4vh;
+}
+
+#SignUpHereP1{
+    font-family: Judson;
+    font-size: 2.25vh;
+    font-weight: 150;
+    color: #EEEEEE;
+    max-width: 100%;
+    position: absolute;
+    top: 35%;
+}
+
+#ColourBreakerBottom{
+    background-color: #FFBB0B;
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+}
+
+#Extra1{
+    font-family: Judson;
+    font-size: 3vh;
+    font-weight: 600;
+    color: #EEEEEE;
+    max-width: 100%;
+    position: absolute;
+    top: 55%;
+    left: 19%;
+}
+
+#SULine1{
+    background-color: #BBBBBB;
+    width: 10%;
+    height: 2px;
+    line-height: 80%;
+    position: absolute;
+    top: 59%;
+    left: 18.5%;
+}
+
+#Extra2{
+    font-family: Judson;
+    font-size: 3vh;
+    font-weight: 600;
+    color: #EEEEEE;
+    max-width: 100%;
+    position: absolute;
+    top: 55%;
+    left: 36.5%;
+}
+
+#SULine2{
+    background-color: #BBBBBB;
+    width: 10%;
+    height: 2px;
+    line-height: 80%;
+    position: absolute;
+    top: 59%;
+    left: 36%;
+}
+
+#Extra3{
+    font-family: Judson;
+    font-size: 3vh;
+    font-weight: 600;
+    color: #EEEEEE;
+    max-width: 100%;
+    position: absolute;
+    top: 55%;
+    left: 55.5%;
+}
+
+#SULine3{
+    background-color: #BBBBBB;
+    width: 10%;
+    height: 2px;
+    line-height: 80%;
+    position: absolute;
+    top: 59%;
+    left: 55%;
+}
+
+#Extra4{
+    font-family: Judson;
+    font-size: 3vh;
+    font-weight: 600;
+    color: #EEEEEE;
+    max-width: 100%;
+    position: absolute;
+    top: 55%;
+    left: 72.5%;
+}
+
+#SULine4{
+    background-color: #BBBBBB;
+    width: 10%;
+    height: 2px;
+    line-height: 80%;
+    position: absolute;
+    top: 59%;
+    left: 72%;
+}
+
+#LogoIconBottom{
+    width: 10%;
+    position: absolute;
+    top: 84%;
+    left: 1%;
+    filter: invert(37%) sepia(3%) saturate(0%) hue-rotate(137deg) brightness(99%) contrast(84%);
+}
